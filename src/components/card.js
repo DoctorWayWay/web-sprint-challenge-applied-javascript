@@ -69,8 +69,9 @@ const cardAppender = (selector) => {
   axios
     .get(`http://localhost:5000/api/articles`)
     .then((response) => {
-      let articlesData = response.data.articles;
-      console.log(articlesData);
+      // Storing raw response data inside articleData variable to be broken down
+      const articlesData = response.data.articles;
+
       // Looping over articlesData object to get the array stored each property
       for (const prop in articlesData) {
         const articlesDataProps = articlesData[prop];

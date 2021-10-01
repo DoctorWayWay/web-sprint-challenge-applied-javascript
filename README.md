@@ -36,8 +36,8 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 **Steps Required for MVP:**
 
 - [x] Steps 1 and 2 are explained inside the `src/components/header.js` file.
-- [ ] Steps 3 and 4 are explained inside the `src/components/tabs.js` file.
-- [ ] Steps 5 and 6 are explained inside the `src/components/card.js` file.
+- [x] Steps 3 and 4 are explained inside the `src/components/tabs.js` file.
+- [x] Steps 5 and 6 are explained inside the `src/components/card.js` file.
 
 **Important Notes:**
 
@@ -60,7 +60,22 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
+
+- The DOM (Document Object Model) is an API for web documents, breaking the document down into nodes, which can later be manipulated through programming, rather than hard coding. In other words, the DOM is basically the data rendition of the HTML document that gives a programming language (like JavaScript) the ability to interact (add, change, delete) with the document and manipulate it, allowing the document to be dynamic rather than hard coded.
+
 2. What is an event?
+
+- Events are activities that happen in an application, which are recorded so that the program can respond to them by executing commands through an event handler.
+
 3. What is an event listener?
+
+- An event listener is a operation that waits for it's specified event to happen, so that it can fire off its event handler to respond to that event.
+
 4. Why would we convert a NodeList into an Array?
+
+- A NodeList is an array like object, and not a true array. This means that a NodeList doesn't have access to all the array methods. We would convert a NodeLists into an array so that we can apply array methods to it (like `.map()`).
+
 5. What is a component?
+
+- A component is a reusable function that takes in information and creates a chunk of code altered by the information you provide it. It is like a blueprint to make a product that will be produced over and over. If I wanted to make a card that shows a name, job, and hobby, I could create them one by one manually. This would take a lot of time though and would make my code very bloated and hard to read. Instead of doing it manually one by one, I could create a single component which takes in a name, job, and hobby that produces a card with a name, job, and hobby. Since only the name, job, and hobby will vary, I could just call the component with a name, job, and hobby and it would make a new card for me with those values. Components save time, space, and sanity. Why make something from scratch over and over, when you can make a machine once, that can create that something
+  over and over for you.
