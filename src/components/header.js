@@ -37,12 +37,8 @@ const Header = (title, date, temp) => {
   return headerContainer;
 };
 
-// Creating component with my values
-const myHeaderValues = Header(
-  "Appleville",
-  "Date: April 7th, 2022",
-  "Temp: 89f"
-);
+// Creating component with values that match the example page
+const headerValues = Header("Lambda Times", "JANUARY 6, 2021", "27º");
 
 const headerAppender = (selector) => {
   // TASK 2
@@ -56,7 +52,7 @@ const headerAppender = (selector) => {
   const headerInjector = document.querySelector(selector);
 
   // Appending Header to selector
-  headerInjector.appendChild(myHeaderValues);
+  headerInjector.appendChild(headerValues);
 };
 
 export { Header, headerAppender };
