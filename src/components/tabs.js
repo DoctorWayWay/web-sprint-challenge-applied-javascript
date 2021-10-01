@@ -47,8 +47,8 @@ const tabsAppender = (selector) => {
   // Axios function to get data from topics API
   axios
     .get(`http://localhost:5000/api/topics`)
-    .then((responce) => {
-      const tabsData = responce.data.topics;
+    .then((response) => {
+      const tabsData = response.data.topics;
       tabsInjector.appendChild(Tabs(tabsData));
     })
     .catch((error) => {
