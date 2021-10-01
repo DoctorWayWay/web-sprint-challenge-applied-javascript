@@ -41,10 +41,10 @@ const tabsAppender = (selector) => {
   // Append the tabs to the element in the DOM that matches the selector passed to the function.
   //
 
-  // Pointing to the selector
+  // Directing injector to the selector
   const tabsInjector = document.querySelector(selector);
 
-  // Axios function
+  // Axios function to get data from topics API
   axios
     .get(`http://localhost:5000/api/topics`)
     .then((responce) => {
@@ -53,6 +53,9 @@ const tabsAppender = (selector) => {
     })
     .catch((error) => {
       console.log(error);
+    })
+    .finally(() => {
+      console.log("Response for topics has arrived!");
     });
 };
 

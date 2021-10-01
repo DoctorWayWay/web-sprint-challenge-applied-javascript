@@ -48,7 +48,7 @@ const headerAppender = (selector) => {
   // It should append the header to the element in the DOM that matches the given selector.
   //
 
-  // Pointing to the selector
+  // Directing injector to the selector
   const headerInjector = document.querySelector(selector);
 
   // Appending Header to selector
