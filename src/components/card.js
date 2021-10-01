@@ -48,6 +48,11 @@ const Card = (article) => {
   cardHeadline.textContent = article["headline"];
   cardAuthorName.textContent = `By ${article["authorName"]}`;
 
+  // Click Event
+  cardContainer.addEventListener("click", (event) => {
+    console.log(cardHeadline.textContent);
+  });
+
   // Returning cardContainer
   return cardContainer;
 };
